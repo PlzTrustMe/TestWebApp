@@ -1,0 +1,7 @@
+version: 2
+authtoken: 2YAOpIEKYJBR2SzmXSkDJ9FTOVA_6L4E7JNQtn9vUykMt3Jym
+tunnels:
+  first:
+    addr: app:5173
+    proto: http
+    hostname: humbly-meet-titmouse.ngrok-free.app
