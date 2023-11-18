@@ -14,7 +14,7 @@ export default {
         'tg-theme-text': 'var(--tg-theme-text-color)',
         'tg-theme-hint': 'var(--tg-theme-hint-color)',
         'tg-theme-link': 'var(--tg-theme-link-color)',
-        'tg-theme-accent': 'var(--tg-theme-accent-color)',
+        'tg-theme-accent': 'var(--tg-theme-accent-text-color)',
         'tg-theme-button': 'var(--tg-theme-button-color)',
         'tg-theme-button-text': 'var(--tg-theme-button-text-color)',
         'tg-theme-section-header-text': 'var(--tg-theme-section-header-text-color)',
