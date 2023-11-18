@@ -1,9 +1,3 @@
 <template>
-  <h1>Hello world</h1>
+  <RouterView />
 </template>
-
-<style>
-body {
-  background-color: white;
-}
-</style>
