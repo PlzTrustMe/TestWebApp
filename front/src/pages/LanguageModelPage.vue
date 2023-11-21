@@ -48,7 +48,7 @@ function setNewSelectedModelId(id) {
 
   <BaseBackButton/>
 
-  <BaseSaveButton :new-value="settingsStore.getActiveSettings.model_id" :old-value="lastSelectedModelId"/>
+  <BaseSaveButton :new-value="newSelectedModelId" :old-value="lastSelectedModelId"/>
 </template>
 
 <style>
