@@ -1,6 +1,5 @@
 <script setup>
 import {onMounted, ref} from "vue";
-
 import {useSettingsStore} from "@/states.js";
 
 import SelectionOption from "@/components/SelectionOption.vue";
@@ -14,11 +13,17 @@ import BaseSaveButton from "@/shared/BaseSaveButton.vue";
 const settingsStore = useSettingsStore()
 
 const lastActiveLanguageId = ref(0)
+const newActiveLanguageId = ref(0)
 
 onMounted(() => {
   lastActiveLanguageId.value = settingsStore.getActiveLanguage.language_id
+  newActiveLanguageId.value = settingsStore.getActiveLanguage.language_id
 })
 
+function setNewActiveLanguageId(id) {
+  settingsStore.setActiveLanguage(id)
+  newActiveLanguageId.value = id
+}
 </script>
 
 <template>
@@ -27,7 +32,7 @@ onMounted(() => {
   <BaseSelection>
     <div v-for="language in settingsStore.languages">
       <SelectionOption
-          @click="settingsStore.setActiveLanguage(language.language_id)"
+          @click="setNewActiveLanguageId(language.language_id)"
           :isSelected="language.isSelected"
           :text="language.language_name"
           :subtext="language.verbose_name"
@@ -42,7 +47,7 @@ onMounted(() => {
   <BaseBackButton/>
 
   <BaseSaveButton
-      :new-value="settingsStore.getActiveLanguage.language_id"
+      :new-value="newActiveLanguageId"
       :old-value="lastActiveLanguageId"
   />
 </template>

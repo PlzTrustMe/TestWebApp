@@ -13,10 +13,17 @@ import {useSettingsStore} from "@/states.js";
 const settingsStore = useSettingsStore()
 
 const lastSelectedModelId = ref(0)
+const newSelectedModelId = ref(0)
 
 onMounted(() => {
   lastSelectedModelId.value = settingsStore.getActiveSettings.model_id
+  newSelectedModelId.value = settingsStore.getActiveSettings.model_id
 })
+
+function setNewSelectedModelId(id) {
+  settingsStore.setActiveModel(id)
+  newSelectedModelId.value = id
+}
 </script>
 
 <template>
@@ -24,7 +31,7 @@ onMounted(() => {
 
   <BaseSelection>
     <div v-for="setting in settingsStore.settings">
-      <SelectionOption @click="settingsStore.setActiveModel(setting.model_id)"
+      <SelectionOption @click="setNewSelectedModelId(setting.model_id)"
                        :isSelected="setting.isSelected"
                        :text="setting.verbose_name" :key="setting.model_id"/>
     </div>
@@ -41,7 +48,7 @@ onMounted(() => {
 
   <BaseBackButton/>
 
-  <BaseSaveButton :new-value="settingsStore.getActiveSettings.model_id" :old-value="lastSelectedModelId" />
+  <BaseSaveButton :new-value="settingsStore.getActiveSettings.model_id" :old-value="lastSelectedModelId"/>
 </template>
 
 <style>
