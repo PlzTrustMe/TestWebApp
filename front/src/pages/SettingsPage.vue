@@ -70,9 +70,9 @@ const settingData = [
       {
         title: 'language',
         icon: LanguageInterfaceIcon,
-        value: 'russia',
-        linkToPage: '/language-model',
-        isReady: false
+        value: settingsStore.getActiveLanguage.language_name,
+        linkToPage: '/select-language',
+        isReady: true
       },
     ]
   },

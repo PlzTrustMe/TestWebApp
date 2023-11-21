@@ -15,6 +15,12 @@ const routes = [
     },
 
     {
+        path: '/select-language',
+        name: 'SelectLanguagePage',
+        component: () => import('./pages/SelectLanguagePage.vue')
+    },
+
+    {
         path: '/:pathMatch(.*)*',
         name: 'NotFoundPage',
         component: () => import('./pages/NotFoundPage.vue')
