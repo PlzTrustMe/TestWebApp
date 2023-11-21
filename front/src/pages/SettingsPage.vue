@@ -70,7 +70,7 @@ const settingData = [
       {
         title: 'language',
         icon: LanguageInterfaceIcon,
-        value: settingsStore.getActiveLanguage.language_name,
+        value: settingsStore.getActiveLanguage.verbose_name,
         linkToPage: '/select-language',
         isReady: true
       },

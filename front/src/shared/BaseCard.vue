@@ -45,7 +45,7 @@ const props = defineProps({
       </div>
 
       <div class="flex items-center gap-2.5 ">
-        <div class="text-xs text-tg-theme-hint uppercase" v-if="value">{{ value }}</div>
+        <div class="text-xs text-tg-theme-hint capitalize" v-if="value">{{ value }}</div>
 
         <ArrowIcon/>
       </div>
