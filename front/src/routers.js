@@ -9,6 +9,12 @@ const routes = [
     },
 
     {
+      path: '/language-model',
+      name: 'LanguageModelPage',
+      component: () => import('./pages/LanguageModelPage.vue')
+    },
+
+    {
         path: '/:pathMatch(.*)*',
         name: 'NotFoundPage',
         component: () => import('./pages/NotFoundPage.vue')
