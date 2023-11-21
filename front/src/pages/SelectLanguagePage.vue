@@ -40,7 +40,7 @@ function setNewActiveLanguageId(id) {
     </div>
   </BaseSelection>
 
-  <BaseDescription class="text-tg-theme-destructive-text" text="This option does not control this interface yet"/>
+  <BaseDescription color="text-tg-theme-destructive-text" text="This option does not control this interface yet"/>
 
   <BaseDescription text="Controls the language of the interface in the bot"/>
 
