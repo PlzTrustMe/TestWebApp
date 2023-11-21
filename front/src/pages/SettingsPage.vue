@@ -17,18 +17,21 @@ const settingData = [
         title: 'language model',
         icon: LanguageModelIcon,
         value: 'gpt-3',
-        linkToPage: '/language-model'
+        linkToPage: '/language-model',
+        isReady: true
       },
       {
         title: 'custom instructions',
         icon: CustomInstructionsIcon,
-        linkToPage: '/custom-instructions'
+        linkToPage: '/custom-instructions',
+        isReady: false
       },
       {
         title: 'context window limit',
         icon: ContextWindowLimitIcon,
         value: 1000,
-        linkToPage: '/window-limit'
+        linkToPage: '/window-limit',
+        isReady: false
       },
     ]
   },
@@ -39,19 +42,22 @@ const settingData = [
         title: 'automatic speech',
         icon: AutomaticSpeechIcon,
         value: 'off',
-        linkToPage: '/language-model'
+        linkToPage: '/language-model',
+        isReady: true
       },
       {
         title: 'auto transcription',
         icon: AutoTranscriptionIcon,
         value: 'off',
-        linkToPage: '/custom-instructions'
+        linkToPage: '/custom-instructions',
+        isReady: false
       },
       {
         title: 'single message',
         icon: SingleMessageIcon,
         value: 'off',
-        linkToPage: '/window-limit'
+        linkToPage: '/window-limit',
+        isReady: false
       },
     ]
   },
@@ -62,7 +68,8 @@ const settingData = [
         title: 'language',
         icon: LanguageInterfaceIcon,
         value: 'russia',
-        linkToPage: '/language-model'
+        linkToPage: '/language-model',
+        isReady: false
       },
     ]
   },

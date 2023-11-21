@@ -1,5 +1,6 @@
 <script setup>
 import BaseCard from "@/shared/BaseCard.vue";
+import BaseTitle from "@/shared/BaseTitle.vue";
 
 const props = defineProps({
   sectionHeader: {
@@ -17,12 +18,12 @@ const props = defineProps({
 
 <template>
   <section class="mb-7">
-    <h2 class="text-tg-theme-subtitle-text text-sm mb-2.5 ps-3.5 uppercase">{{ props.sectionHeader }}</h2>
+    <BaseTitle :title="props.sectionHeader" />
 
     <div class="space-y-1">
       <div v-for="item in props.sectionData">
         <BaseCard :title="item.title" :link-to-page="item.linkToPage" :icon="item.icon"
-                  :value="item?.value"/>
+                  :value="item?.value" :isReady="item.isReady" />
       </div>
     </div>
   </section>
