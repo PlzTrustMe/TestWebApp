@@ -3,7 +3,6 @@ import {onMounted, ref} from "vue";
 import SelectionOption from "@/components/SelectionOption.vue";
 
 import BaseTitle from "@/shared/BaseTitle.vue";
-import BaseBackButton from "@/shared/BaseBackButton.vue";
 import BaseDescription from "@/shared/BaseDescription.vue";
 import BaseSelection from "@/shared/BaseSelection.vue";
 import BaseSaveButton from "@/shared/BaseSaveButton.vue";
@@ -45,8 +44,6 @@ function setNewSelectedModelId(id) {
       </ul>
     </template>
   </BaseDescription>
-
-  <BaseBackButton/>
 
   <BaseSaveButton :new-value="newSelectedModelId" :old-value="lastSelectedModelId"/>
 </template>

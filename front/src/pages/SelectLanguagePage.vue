@@ -5,7 +5,6 @@ import {useSettingsStore} from "@/states.js";
 import SelectionOption from "@/components/SelectionOption.vue";
 
 import BaseTitle from "@/shared/BaseTitle.vue";
-import BaseBackButton from "@/shared/BaseBackButton.vue";
 import BaseSelection from "@/shared/BaseSelection.vue";
 import BaseDescription from "@/shared/BaseDescription.vue";
 import BaseSaveButton from "@/shared/BaseSaveButton.vue";
@@ -43,8 +42,6 @@ function setNewActiveLanguageId(id) {
   <BaseDescription color="text-tg-theme-destructive-text" text="This option does not control this interface yet"/>
 
   <BaseDescription text="Controls the language of the interface in the bot"/>
-
-  <BaseBackButton/>
 
   <BaseSaveButton
       :new-value="newActiveLanguageId"
