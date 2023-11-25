@@ -33,6 +33,12 @@ const routes = [
     },
 
     {
+        path: '/single-message',
+        name: 'SingleMessagePage',
+        component: () => import('./pages/SingleMessagePage.vue')
+    },
+
+    {
         path: '/:pathMatch(.*)*',
         name: 'NotFoundPage',
         component: () => import('./pages/NotFoundPage.vue')
