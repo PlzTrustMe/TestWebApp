@@ -45,15 +45,15 @@ const settingData = [
         title: 'automatic speech',
         icon: AutomaticSpeechIcon,
         value: 'off',
-        linkToPage: '/language-model',
-        isReady: true
+        linkToPage: '/',
+        isReady: false
       },
       {
         title: 'auto transcription',
         icon: AutoTranscriptionIcon,
-        value: 'off',
-        linkToPage: '/custom-instructions',
-        isReady: false
+        value: settingsStore.userAutoTranscription ? 'On' : 'Off',
+        linkToPage: '/auto-transcription',
+        isReady: true
       },
       {
         title: 'single message',

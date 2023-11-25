@@ -21,6 +21,12 @@ const routes = [
     },
 
     {
+        path: '/auto-transcription',
+        name: 'AutoTranscriptionPage',
+        component: () => import('./pages/AutoTranscriptionPage.vue')
+    },
+
+    {
         path: '/:pathMatch(.*)*',
         name: 'NotFoundPage',
         component: () => import('./pages/NotFoundPage.vue')
