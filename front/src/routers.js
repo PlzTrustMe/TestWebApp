@@ -39,6 +39,12 @@ const routes = [
     },
 
     {
+        path: '/custom-instructions',
+        name: 'CustomInstructionsPage',
+        component: () => import('./pages/CustomInstructions.vue')
+    },
+
+    {
         path: '/:pathMatch(.*)*',
         name: 'NotFoundPage',
         component: () => import('./pages/NotFoundPage.vue')

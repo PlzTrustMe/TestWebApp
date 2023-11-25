@@ -27,7 +27,7 @@ const settingData = [
         title: 'custom instructions',
         icon: CustomInstructionsIcon,
         linkToPage: '/custom-instructions',
-        isReady: false
+        isReady: true
       },
       {
         title: 'context window limit',

@@ -47,7 +47,10 @@ export const useSettingsStore = defineStore('settings', {
 
             userAutoTranscription: false,
             userAutoSpeech: false,
-            userSingeMessage: false
+            userSingeMessage: false,
+
+            userResponse: "",
+            userRespond: "",
         }
     },
 
