@@ -44,9 +44,9 @@ const settingData = [
       {
         title: 'automatic speech',
         icon: AutomaticSpeechIcon,
-        value: 'off',
-        linkToPage: '/',
-        isReady: false
+        value: settingsStore.userAutoSpeech ? 'On' : 'Off',
+        linkToPage: '/auto-speech',
+        isReady: true
       },
       {
         title: 'auto transcription',
@@ -58,9 +58,9 @@ const settingData = [
       {
         title: 'single message',
         icon: SingleMessageIcon,
-        value: 'off',
-        linkToPage: '/window-limit',
-        isReady: false
+        value: settingsStore.userSingeMessage ? 'On' : 'Off',
+        linkToPage: '/single-message',
+        isReady: true
       },
     ]
   },

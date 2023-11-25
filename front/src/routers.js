@@ -27,6 +27,12 @@ const routes = [
     },
 
     {
+        path: '/auto-speech',
+        name: 'AutoSpeechPage',
+        component: () => import('./pages/AutoSpeechPage.vue')
+    },
+
+    {
         path: '/:pathMatch(.*)*',
         name: 'NotFoundPage',
         component: () => import('./pages/NotFoundPage.vue')
