@@ -1,5 +1,5 @@
 <template>
-  <svg class="stroke-tg-theme-accent"
+  <svg class="stroke-tg-theme-accent fill-none"
       width="7"
       height="12"
       viewBox="0 0 7 12"
