@@ -39,7 +39,7 @@ const props = defineProps({
           <img class="rounded-lg w-8 h-8" :src="props.icon" :alt="props.title"/>
         </div>
 
-        <div class="text-sm text-tg-theme-text capitalize">
+        <div class="text-tg-theme-text capitalize">
           {{ title }}
         </div>
       </div>

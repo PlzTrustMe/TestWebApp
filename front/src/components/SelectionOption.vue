@@ -20,7 +20,7 @@ const props = defineProps({
   <div
       class="flex justify-between items-center p-3 border-tg-theme-bg border-[1px] cursor-pointer">
     <div class="space-y-1">
-      <div class="text-sm text-tg-theme-text">{{ props.text }}</div>
+      <div class="text-tg-theme-text">{{ props.text }}</div>
       <div class="text-xs text-tg-theme-hint">{{ props?.subtext }}</div>
     </div>
 
